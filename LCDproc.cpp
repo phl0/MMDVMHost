@@ -241,7 +241,7 @@ void CLCDproc::setQuitInt()
 	m_dmr = false;
 }
 
-void CLCDproc::setFMInt()
+void CLCDproc::setFMInt(float ctcss)
 {
 	m_clockDisplayTimer.stop();           // Stop the clock display
 

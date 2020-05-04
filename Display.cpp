@@ -101,7 +101,7 @@ void CDisplay::setQuit()
 	setQuitInt();
 }
 
-void CDisplay::setFM()
+void CDisplay::setFM(float ctcss)
 {
 	m_timer1.stop();
 	m_timer2.stop();
@@ -109,7 +109,7 @@ void CDisplay::setFM()
 	m_mode1 = MODE_FM;
 	m_mode2 = MODE_FM;
 
-	setFMInt();
+	setFMInt(ctcss);
 }
 
 void CDisplay::writeDStar(const char* my1, const char* my2, const char* your, const char* type, const char* reflector)

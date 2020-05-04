@@ -60,7 +60,7 @@ void CNullDisplay::setQuitInt()
 {
 }
 
-void CNullDisplay::setFMInt()
+void CNullDisplay::setFMInt(float ctcss)
 {
 }
 

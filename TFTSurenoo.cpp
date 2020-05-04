@@ -174,7 +174,7 @@ void CTFTSurenoo::setQuitInt()
 	m_mode = MODE_QUIT;
 }
 
-void CTFTSurenoo::setFMInt()
+void CTFTSurenoo::setFMInt(float ctcss)
 {
 	setModeLine(STR_MMDVM);
 	setStatusLine(statusLineNo(1), "FM");

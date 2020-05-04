@@ -1787,7 +1787,7 @@ void CMMDVMHost::setMode(unsigned char mode)
 		}
 		if (m_ump != NULL)
 			m_ump->setMode(MODE_FM);
-		m_display->setFM();
+		m_display->setFM(m_conf.getFMCTCSSFrequency());
 		m_mode = MODE_FM;
 		m_modeTimer.stop();
 		m_cwIdTimer.stop();

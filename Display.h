@@ -42,7 +42,7 @@ public:
 	void setLockout();
 	void setError(const char* text);
 	void setQuit();
-	void setFM();
+	void setFM(float ctcss);
 
 	void writeDStar(const char* my1, const char* my2, const char* your, const char* type, const char* reflector);
 	void writeDStarRSSI(unsigned char rssi);
@@ -75,6 +75,8 @@ public:
 	void writePOCSAG(uint32_t ric, const std::string& message);
 	void clearPOCSAG();
 
+	void clearFM();
+
 	void writeCW();
 
 	virtual void close() = 0;
@@ -88,7 +90,7 @@ protected:
 	virtual void setLockoutInt() = 0;
 	virtual void setErrorInt(const char* text) = 0;
 	virtual void setQuitInt() = 0;
-	virtual void setFMInt() = 0;
+	virtual void setFMInt(float ctcss) = 0;
 
 	virtual void writeDStarInt(const char* my1, const char* my2, const char* your, const char* type, const char* reflector) = 0;
 	virtual void writeDStarRSSIInt(unsigned char rssi);

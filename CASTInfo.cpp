@@ -76,7 +76,7 @@ void CCASTInfo::setQuitInt()
 {
 }
 
-void CCASTInfo::setFMInt()
+void CCASTInfo::setFMInt(float ctcss)
 {
 }
 

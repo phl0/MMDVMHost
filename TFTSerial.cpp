@@ -161,7 +161,7 @@ void CTFTSerial::setQuitInt()
 	m_mode = MODE_QUIT;
 }
 
-void CTFTSerial::setFMInt()
+void CTFTSerial::setFMInt(float ctcss)
 {
 	// Clear the screen
 	clearScreen();

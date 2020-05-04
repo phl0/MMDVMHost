@@ -50,7 +50,7 @@ public:
   virtual void setErrorInt(const char* text);
   virtual void setLockoutInt();
   virtual void setQuitInt();
-  virtual void setFMInt();
+  virtual void setFMInt(float ctcss);
   
   virtual void writeDStarInt(const char* my1, const char* my2, const char* your, const char* type, const char* reflector);
   virtual void clearDStarInt();

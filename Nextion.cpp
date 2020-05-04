@@ -239,7 +239,7 @@ void CNextion::setQuitInt()
 	m_mode = MODE_QUIT;
 }
 
-void CNextion::setFMInt()
+void CNextion::setFMInt(float ctcss)
 {
 	sendCommand("page MMDVM");
 	sendCommandAction(1U);
